@@ -1,4 +1,4 @@
-This is the training code for:
+This is a reimplementation of 
 
 #### Learning to Predict 3D Objects with an Interpolation-based Differentiable Renderer (NeurIPS 2019)
 
@@ -6,6 +6,12 @@ This is the training code for:
 
 
 **[[Paper](https://arxiv.org/abs/1908.01210)]  [[Project Page](https://nv-tlabs.github.io/DIB-R/)]**
+
+
+It contains training and inference scripts for Single Image 3D Reconstruction task, using **[Kaolin library](https://github.com/NVIDIAGameWorks/kaolin)** DIB-R renderer. It is suitable for reproduction of the publication:
+ 
+If you'd like to see the original implementation of the renderer you can check the [legacy code](https://github.com/nv-tlabs/DIB-R/) (Renderer only).
+
 
 ## Usage
 
@@ -50,7 +56,7 @@ python check_chamfer.py  --folder YOUR_SAVING_FOLDER --gt_folder YOUR_DATASET_FO
 
 # performance
 
-tested with chckpoint 469999 iterations.
+tested with checkpoint 469999 iterations.
 
 |  Class | 02691156| 02828884|02933112|02958343|03001627|03211117|03636649|03691459|04090263|04256520|04379243|04401088|04530566 | Average |
 |  ----  | ----  |     ----  |   ----  |  ----  | ----  |----  |  ----  |   ----  |   ----  |  ----  | ----  |----  |   ----  |  ----  |
